@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "778636095225",
+    "firebase_url": "https://sjcet-portal.firebaseio.com",
+    "project_id": "sjcet-portal",
+    "storage_bucket": "sjcet-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778636095225:android:41f0bfff78c7a363",
+        "android_client_info": {
+          "package_name": "com.example.frinclina.stjcportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778636095225-q73q40j73jrd9ei76odapfvr3nl7m3cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.frinclina.stjcportal",
+            "certificate_hash": "934a11d3630358a356a82e35c79978f78eaba733"
+          }
+        },
+        {
+          "client_id": "778636095225-ddb6o4dpduhh8654ficai98r45nlmchb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPK70_HN5tZ5qPLIOB-X9Loet2YjcZA8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778636095225-ddb6o4dpduhh8654ficai98r45nlmchb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

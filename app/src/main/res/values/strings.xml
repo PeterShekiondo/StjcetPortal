@@ -1,0 +1,38 @@
+<resources>
+    <!--> Register and Log in Strings  </!-->
+    <string name="app_name">StjcPortal</string>
+    <string name="registertitle">REGISTER</string>
+    <string name="registerButton">REGISTER</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="log_inButton">LOG IN</string>
+    <string name="titlelog_in">LOG IN</string>
+    <string name="Email">Email</string>
+    <string name="user_name">User name</string>
+
+    <!--> Menu Strings (Home)  </!-->
+    <string name="account">Account</string>
+    <string name="map">Map</string>
+    <string name="calendar">Calendar</string>
+    <string name="cousrses">Courses</string>
+    <string name="media">Media</string>
+    <string name="news">News</string>
+    <string name="events">Events</string>
+    <string name="AboutStj">St.Joseph</string>
+    <string name="sports">Sports</string>
+
+    <!--> Menu Strings (Student Account)  </!-->
+    <string name="results">Results</string>
+    <string name="admission">Admission</string>
+    <string name="clearance">Clearance</string>
+    <string name="library">Library</string>
+    <string name="projects">Projects</string>
+    <string name="iptr">IPTR</string>
+    <string name="nhif">NHIF</string>
+    <string name="announcements">Announcements</string>
+    <string name="todo">TODO</string>
+
+</resources>

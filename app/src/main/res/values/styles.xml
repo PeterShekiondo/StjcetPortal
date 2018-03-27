@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="textfield">
+        <item name="android:textColor">@color/Fontcolor</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">@color/Fontcolor</item>
+
+
+    </style>
+
+    <style name="buttonn">
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/Fontcolor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ems">12</item>
+    </style>
+
+    <style name="termsandservices">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/Fontcolor</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+
+
+    </style>
+
+</resources>
