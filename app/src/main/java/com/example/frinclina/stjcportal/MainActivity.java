@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,15 +27,16 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
 
-ImageButton imageb1,imageb2,imageb3,imageb4,imageb5,imageb6,imageb7,imageb8,imageb9;
+private ImageButton imageb2,imageb3,imageb4,imageb5,imageb6,imageb7,imageb8,imageb9;
+ LinearLayout home1, home2, home3, home4, home5, home6, home7, home8, home9;
 
-     private EditText lname;
-     private EditText lpassword;
-     private EditText uname;
+    private EditText lname;
+    private EditText lpassword;
+    private EditText uname;
     private EditText ename;
     private EditText epassword;
     private EditText epassword2;
-    private  FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
 
     private Dialog myDialog,myDialog2;
@@ -46,14 +48,77 @@ ImageButton imageb1,imageb2,imageb3,imageb4,imageb5,imageb6,imageb7,imageb8,imag
 
         myDialog = new Dialog(this);
         myDialog2 = new Dialog(this);
+
+    home1= (LinearLayout)findViewById(R.id.Account);
+    home1.animate().rotation(home1.getRotation()+360).start();
+    home2= (LinearLayout)findViewById(R.id.Coursess);
+    home2.animate().rotation(home2.getRotation()-360).start();
+    home3= (LinearLayout)findViewById(R.id.Calendarss);
+    home3.animate().rotation(home3.getRotation()+360).start();
+    home4= (LinearLayout)findViewById(R.id.Newss);
+    home4.animate().rotation(home4.getRotation()-360).start();
+    home5=(LinearLayout)findViewById(R.id.Mediass);
+    home5.animate().rotation(home5.getRotation()+360).start();
+    home6=(LinearLayout)findViewById(R.id.Eventss);
+    home6.animate().rotation(home6.getRotation()-360).start();
+    home7=(LinearLayout)findViewById(R.id.Stjoseph);
+    home7.animate().rotation(home7.getRotation()+360).start();
+    home8=(LinearLayout)findViewById(R.id.Mapss);
+    home8.animate().rotation(home8.getRotation()-360).start();
+    home9=(LinearLayout)findViewById(R.id.Sportss);
+    home9.animate().rotation(home9.getRotation()+360).start();
+
     }
 
+public void coursess(View v){
+    home2= (LinearLayout)findViewById(R.id.Coursess);
+    home2.animate().rotation(home2.getRotation()-360).start();
 
+    Intent intent= new Intent(MainActivity.this, Courses.class);
+    startActivity(intent);
+}
+
+public void calendarss(View v){
+    home3= (LinearLayout)findViewById(R.id.Calendarss);
+    home3.animate().rotation(home3.getRotation()-360).start();
+}
+
+public void newss(View v){
+    home4= (LinearLayout)findViewById(R.id.Newss);
+    home4.animate().rotation(home4.getRotation()-360).start();
+}
+
+public void mediass(View v){
+    home5=(LinearLayout)findViewById(R.id.Mediass);
+    home5.animate().rotation(home5.getRotation()-360).start();
+}
+
+public void eventss(View v){
+    home6=(LinearLayout)findViewById(R.id.Eventss);
+    home6.animate().rotation(home6.getRotation()-360).start();
+}
+
+public void stjoseph(View v){
+    home7=(LinearLayout)findViewById(R.id.Stjoseph);
+    home7.animate().rotation(home7.getRotation()-360).start();
+}
+
+public void mapss(View v){
+    home8=(LinearLayout)findViewById(R.id.Mapss);
+    home8.animate().rotation(home8.getRotation()-360).start();
+}
+
+public void sportss(View v){
+    home9=(LinearLayout)findViewById(R.id.Sportss);
+    home9.animate().rotation(home9.getRotation()-360).start();
+}
 
     public void showPopup(View v){
 
-    imageb1= (ImageButton)findViewById(R.id.imageButton1);
-    imageb1.animate().rotation(imageb1.getRotation()-360).start();
+    home1= (LinearLayout)findViewById(R.id.Account);
+    home1.animate().rotation(home1.getRotation()-360).start();
+//    imageb1= (ImageButton)findViewById(R.id.imageButton1);             Image button ratation animation ( imageb1 not declare)
+//    imageb1.animate().rotation(imageb1.getRotation()-360).start();
 
         myDialog.setContentView(R.layout.login);
 

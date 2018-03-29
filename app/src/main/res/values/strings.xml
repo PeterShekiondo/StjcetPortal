@@ -33,6 +33,14 @@
     <string name="iptr">IPTR</string>
     <string name="nhif">NHIF</string>
     <string name="announcements">Announcements</string>
+    <string name="title_activity_courses">Courses</string>
+
+    <!-->Courses Menu </!-->
     <string name="todo">TODO</string>
+    <string name="Title">Courses Provided </string>
+    <string name="tab_text_1">Degree</string>
+    <string name="tab_text_2">Diploma</string>
+    <string name="tab_text_3">Short courses</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

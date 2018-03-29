@@ -54,6 +54,7 @@
             android:visibility="visible">
 
             <LinearLayout
+                android:id="@+id/Account"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
@@ -96,6 +97,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="coursess"
+                android:id="@+id/Coursess"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
@@ -105,6 +108,7 @@
                 android:visibility="visible" android:focusable="true">
 
                 <ImageButton
+                    android:onClick="coursess"
                     android:id="@+id/imageButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,6 +121,7 @@
                     android:focusable="true"/>
 
                 <TextView
+                    android:onClick="coursess"
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -130,6 +135,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="calendarss"
+                android:id="@+id/Calendarss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
@@ -140,6 +147,7 @@
                 android:focusable="true">
 
                 <ImageButton
+                    android:onClick="calendarss"
                     android:id="@+id/imageButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -152,6 +160,7 @@
                     android:focusable="true"/>
 
                 <TextView
+                    android:onClick="calendarss"
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -175,6 +184,8 @@
             tools:layout_editor_absoluteY="195dp">
 
             <LinearLayout
+                android:onClick="newss"
+                android:id="@+id/Newss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
@@ -186,6 +197,7 @@
                 android:focusable="true">
 
                 <ImageButton
+                    android:onClick="newss"
                     android:id="@+id/imageButton6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -198,6 +210,7 @@
                     android:focusable="true"/>
 
                 <TextView
+                    android:onClick="newss"
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -211,6 +224,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="mediass"
+                android:id="@+id/Mediass"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="1dp"
@@ -221,6 +236,7 @@
                 android:focusable="true">
 
                 <ImageButton
+                    android:onClick="mediass"
                     android:id="@+id/imageButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -233,6 +249,7 @@
                     android:src="@drawable/mediasv" />
 
                 <TextView
+                    android:onClick="mediass"
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -246,6 +263,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="eventss"
+                android:id="@+id/Eventss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginStart="1dp"
@@ -257,6 +276,7 @@
                 android:visibility="visible">
 
                 <ImageButton
+                    android:onClick="eventss"
                     android:id="@+id/imageButton7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -269,6 +289,7 @@
                     android:src="@drawable/eventssv" />
 
                 <TextView
+                    android:onClick="eventss"
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -293,6 +314,8 @@
             tools:layout_editor_absoluteY="48dp">
 
             <LinearLayout
+                android:onClick="stjoseph"
+                android:id="@+id/Stjoseph"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
@@ -304,6 +327,7 @@
                 android:visibility="visible">
 
                 <ImageButton
+                    android:onClick="stjoseph"
                     android:id="@+id/imageButton8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -316,6 +340,7 @@
                     android:src="@drawable/aboutstjv" />
 
                 <TextView
+                    android:onClick="stjoseph"
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -329,6 +354,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="mapss"
+                android:id="@+id/Mapss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="1dp"
@@ -339,6 +366,7 @@
                 android:visibility="visible">
 
                 <ImageButton
+                    android:onClick="mapss"
                     android:id="@+id/imageButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -351,6 +379,7 @@
                     android:focusable="true"/>
 
                 <TextView
+                    android:onClick="mapss"
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -364,6 +393,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="sportss"
+                android:id="@+id/Sportss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginStart="1dp"
@@ -375,6 +406,7 @@
                 android:visibility="visible">
 
                 <ImageButton
+                    android:onClick="sportss"
                     android:id="@+id/imageButton9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -388,6 +420,7 @@
                     />
 
                 <TextView
+                    android:onClick="sportss"
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
