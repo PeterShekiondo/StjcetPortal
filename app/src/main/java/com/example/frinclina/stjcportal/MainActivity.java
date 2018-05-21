@@ -139,6 +139,9 @@ public void calendarss(View v){
 public void newss(View v){
     home4= (LinearLayout)findViewById(R.id.Newss);
     home4.animate().rotation(home4.getRotation()-360).start();
+
+    Intent intent4 = new Intent(MainActivity.this, News_and_feeds.class);
+    startActivity(intent4);
 }
 
 public void mediass(View v){
@@ -154,11 +157,17 @@ public void eventss(View v){
 public void stjoseph(View v){
     home7=(LinearLayout)findViewById(R.id.Stjoseph);
     home7.animate().rotation(home7.getRotation()-360).start();
+
+    Intent intent7 = new Intent(MainActivity.this, Aboutstj.class);
+    startActivity(intent7);
 }
 
 public void mapss(View v){
     home8=(LinearLayout)findViewById(R.id.Mapss);
     home8.animate().rotation(home8.getRotation()-360).start();
+
+    Intent intent8 = new Intent(MainActivity.this, Map.class);
+    startActivity(intent8);
 }
 
 public void sportss(View v){

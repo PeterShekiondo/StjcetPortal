@@ -7,4 +7,5 @@
     <color name="White">#ffffff</color>
     <color name="Fontcolor">#ecf2f8</color>
     <color name="LoginBlue">#115b9c</color>
+    <color name="progressbar">#d36458</color>
 </resources>

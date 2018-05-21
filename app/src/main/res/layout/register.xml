@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="280dp"
-    android:layout_height="420dp"
+    android:layout_height="430dp"
     android:background="@drawable/loginbackground"
     android:layout_gravity="center">
 
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            style="@style/termsandservices"
-            android:text="@string/registertitle"
-            android:textStyle="bold"
             android:id="@+id/textView99"
+            style="@style/termsandservices"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:layout_gravity="center_horizontal"/>
+            android:text="@string/registertitle"
+            android:textStyle="bold" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editText"
@@ -33,9 +37,9 @@
                 android:layout_gravity="center_horizontal"
                 android:drawableStart="@drawable/usernamev"
                 android:fontFamily="Roboto"
-                android:paddingRight="30dp"
                 android:hint="@string/user_name"
                 android:inputType="textEmailAddress"
+                android:paddingRight="30dp"
                 android:textAlignment="center" />
 
             <EditText
@@ -44,18 +48,18 @@
                 android:layout_gravity="center_horizontal"
                 android:drawableStart="@drawable/usermail"
                 android:fontFamily="Roboto"
-                android:paddingRight="30dp"
                 android:hint="@string/Email"
                 android:inputType="textEmailAddress"
+                android:paddingRight="30dp"
                 android:textAlignment="center" />
 
             <EditText
                 android:id="@+id/editText3"
                 style="@style/textfield"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
                 android:drawableEnd="@drawable/showpassword"
                 android:drawableStart="@drawable/passwordv"
-                android:layout_marginTop="5dp"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textAlignment="center" />
@@ -64,37 +68,54 @@
                 android:id="@+id/editText4"
                 style="@style/textfield"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
                 android:drawableEnd="@drawable/showpassword"
                 android:drawableStart="@drawable/passwordv"
                 android:fontFamily="Roboto"
-                android:layout_marginTop="5dp"
                 android:hint="@string/confirm_password"
                 android:inputType="textPassword"
                 android:textAlignment="center" />
+
             <Button
-                style="@style/buttonn"
-                android:text="@string/registerButton"
                 android:id="@+id/button"
+                style="@style/buttonn"
+                android:layout_marginTop="20dp"
                 android:clickable="true"
                 android:elevation="5dp"
-                android:layout_marginTop="20dp"
-                android:textSize="18sp"
-                android:focusable="true" />
+                android:focusable="true"
+                android:text="@string/registerButton"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
             <TextView
-                style="@style/termsandservices"
-                android:text="@string/log_in"
                 android:id="@+id/textView11"
+                style="@style/termsandservices"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:clickable="true"
-                android:layout_gravity="center_horizontal"/>
+                android:text="@string/log_in" />
+
             <TextView
-                style="@style/termsandservices"
-                android:text="@string/terms_and_conditions"
-                android:clickable="true"
                 android:id="@+id/textView12"
+                style="@style/termsandservices"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal"/>
+                android:clickable="true"
+                android:text="@string/terms_and_conditions" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/progressbar"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
         </LinearLayout>

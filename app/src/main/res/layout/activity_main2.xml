@@ -8,26 +8,27 @@
     tools:context="com.example.frinclina.stjcportal.Main2Activity">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
@@ -38,11 +39,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleimage">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,13 +55,15 @@
             android:visibility="visible">
 
             <LinearLayout
+                android:id="@+id/results"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Results">
 
                 <ImageButton
                     android:id="@+id/imageButton1"
@@ -68,7 +73,8 @@
                     android:layout_marginTop="7dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/resultsv" />
+                    android:src="@drawable/resultsv"
+                    android:onClick="Results"/>
 
                 <TextView
                     android:id="@+id/textView"
@@ -79,17 +85,20 @@
                     android:fontFamily="Roboto"
                     android:text="@string/results"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Results"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/admission"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Admission">
 
                 <ImageButton
                     android:id="@+id/imageButton2"
@@ -99,7 +108,8 @@
                     android:layout_marginTop="7dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/admissionv" />
+                    android:src="@drawable/admissionv"
+                    android:onClick="Admission"/>
 
                 <TextView
                     android:id="@+id/textView2"
@@ -110,17 +120,20 @@
                     android:fontFamily="Roboto"
                     android:text="@string/admission"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Admission"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/clearance"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Clearance">
 
                 <ImageButton
                     android:id="@+id/imageButton3"
@@ -130,7 +143,8 @@
                     android:layout_marginTop="7dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/clearancev" />
+                    android:src="@drawable/clearancev"
+                    android:onClick="Clearance"/>
 
                 <TextView
                     android:id="@+id/textView3"
@@ -141,7 +155,8 @@
                     android:fontFamily="Roboto"
                     android:text="@string/clearance"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Clearance"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -156,6 +171,7 @@
             tools:layout_editor_absoluteY="195dp">
 
             <LinearLayout
+                android:id="@+id/library"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="1dp"
@@ -163,7 +179,8 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Library">
 
                 <ImageButton
                     android:id="@+id/imageButton4"
@@ -173,7 +190,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/librarryv" />
+                    android:src="@drawable/librarryv"
+                    android:onClick="Library"/>
 
                 <TextView
                     android:id="@+id/textView4"
@@ -184,17 +202,20 @@
                     android:fontFamily="Roboto"
                     android:text="@string/library"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Library"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/projects"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Project">
 
                 <ImageButton
                     android:id="@+id/imageButton5"
@@ -204,7 +225,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/projectsv" />
+                    android:src="@drawable/projectsv"
+                    android:onClick="Project"/>
 
                 <TextView
                     android:id="@+id/textView5"
@@ -215,10 +237,12 @@
                     android:fontFamily="Roboto"
                     android:text="@string/projects"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Project"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/iptr"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginLeft="1dp"
@@ -226,7 +250,8 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Iptr">
 
                 <ImageButton
                     android:id="@+id/imageButton6"
@@ -236,7 +261,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/iptrv" />
+                    android:src="@drawable/iptrv"
+                    android:onClick="Iptr"/>
 
                 <TextView
                     android:id="@+id/textView6"
@@ -247,7 +273,8 @@
                     android:fontFamily="Roboto"
                     android:text="@string/iptr"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Iptr"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -262,6 +289,7 @@
             tools:layout_editor_absoluteY="48dp">
 
             <LinearLayout
+                android:id="@+id/nhif"
                 android:layout_width="173dp"
                 android:layout_height="110dp"
                 android:layout_marginRight="1dp"
@@ -269,7 +297,8 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Nhif">
 
                 <ImageButton
                     android:id="@+id/imageButton7"
@@ -279,7 +308,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/nhifv" />
+                    android:src="@drawable/nhifv"
+                    android:onClick="Nhif"/>
 
                 <TextView
                     android:id="@+id/textView7"
@@ -290,17 +320,20 @@
                     android:fontFamily="Roboto"
                     android:text="@string/nhif"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Nhif"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/announcements"
                 android:layout_width="171dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:onClick="Announcements">
 
                 <ImageButton
                     android:id="@+id/imageButton9"
@@ -310,7 +343,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
-                    android:src="@drawable/announcementsv" />
+                    android:src="@drawable/announcementsv"
+                    android:onClick="Announcements"/>
 
                 <TextView
                     android:id="@+id/textView9"
@@ -321,11 +355,34 @@
                     android:fontFamily="Roboto"
                     android:text="@string/announcements"
                     android:textColor="@color/Fontcolor"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:onClick="Announcements"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/LoginBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:src="@drawable/accountimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
 
 </android.support.constraint.ConstraintLayout>

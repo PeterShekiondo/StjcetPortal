@@ -9,18 +9,19 @@
     android:background="@drawable/loginbackground"
     android:layout_gravity="center">
 
+
+
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView100"
@@ -54,25 +55,27 @@
                 android:drawableStart="@drawable/usernamev"
                 android:hint="@string/user_name"
                 android:inputType="textEmailAddress"
-                android:textAlignment="center"
                 android:paddingRight="30dp"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat" />
 
 
-                <EditText
-                    android:id="@+id/editText117"
-                    style="@style/textfield"
-                    android:layout_gravity="center_horizontal"
-                    android:drawableEnd="@drawable/showpassword"
-                    android:drawableStart="@drawable/passwordv"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="Roboto"
-                    android:hint="@string/password"
-                    android:inputType="textPassword"
-                    android:textAlignment="center" />
+            <EditText
+                android:id="@+id/editText117"
+                style="@style/textfield"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/showpassword"
+                android:drawableStart="@drawable/passwordv"
+                android:fontFamily="Roboto"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
             <Button
                 android:id="@+id/button117"
                 style="@style/buttonn"
+                android:textAllCaps="false"
                 android:layout_marginTop="20dp"
                 android:clickable="true"
                 android:elevation="5dp"
@@ -81,13 +84,13 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:onClick="showPopup2"
                 android:id="@+id/textView9"
                 style="@style/termsandservices"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="showPopup2"
                 android:text="@string/register" />
 
             <!--
@@ -110,6 +113,19 @@
                 android:focusable="true"
                 android:text="@string/terms_and_conditions" />
 
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/progressbar"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
     </LinearLayout>

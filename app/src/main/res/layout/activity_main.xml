@@ -12,7 +12,6 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="230dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:adjustViewBounds="true"
@@ -38,13 +37,15 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         android:elevation="6dp"
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,10 +61,10 @@
                 android:layout_marginEnd="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="showPopup"
                 android:orientation="vertical"
-                android:visibility="visible" android:focusable="true">
-
+                android:visibility="visible">
 
 
                 <ImageButton
@@ -76,11 +77,9 @@
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
 
-                    android:onClick="showPopup"
-                    android:src="@drawable/studentsaccount"
                     android:focusable="true"
-                    />
-
+                    android:onClick="showPopup"
+                    android:src="@drawable/studentsaccount" />
 
 
                 <TextView
@@ -97,18 +96,18 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="coursess"
                 android:id="@+id/Coursess"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
+                android:focusable="true"
+                android:onClick="coursess"
                 android:orientation="vertical"
-                android:visibility="visible" android:focusable="true">
+                android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="coursess"
                     android:id="@+id/imageButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,17 +116,18 @@
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
-                    android:src="@drawable/coursesv"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:onClick="coursess"
+                    android:src="@drawable/coursesv" />
 
                 <TextView
-                    android:onClick="coursess"
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="coursess"
                     android:text="@string/cousrses"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -135,19 +135,18 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="calendarss"
                 android:id="@+id/Calendarss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
+                android:focusable="true"
+                android:onClick="calendarss"
                 android:orientation="vertical"
-                android:visibility="visible"
-                android:focusable="true">
+                android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="calendarss"
                     android:id="@+id/imageButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -156,17 +155,18 @@
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
-                    android:src="@drawable/calendarv"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:onClick="calendarss"
+                    android:src="@drawable/calendarv" />
 
                 <TextView
-                    android:onClick="calendarss"
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="calendarss"
                     android:text="@string/calendar"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -184,7 +184,6 @@
             tools:layout_editor_absoluteY="195dp">
 
             <LinearLayout
-                android:onClick="newss"
                 android:id="@+id/Newss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
@@ -192,12 +191,12 @@
                 android:layout_marginTop="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
+                android:focusable="true"
+                android:onClick="newss"
                 android:orientation="vertical"
-                android:visibility="visible"
-                android:focusable="true">
+                android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="newss"
                     android:id="@+id/imageButton6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -206,17 +205,18 @@
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
-                    android:src="@drawable/newsv"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:onClick="newss"
+                    android:src="@drawable/newsv" />
 
                 <TextView
-                    android:onClick="newss"
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="newss"
                     android:text="@string/news"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -224,19 +224,18 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="mediass"
                 android:id="@+id/Mediass"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="1dp"
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
+                android:focusable="true"
+                android:onClick="mediass"
                 android:orientation="vertical"
-                android:visibility="visible"
-                android:focusable="true">
+                android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="mediass"
                     android:id="@+id/imageButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -246,16 +245,17 @@
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
                     android:focusable="true"
+                    android:onClick="mediass"
                     android:src="@drawable/mediasv" />
 
                 <TextView
-                    android:onClick="mediass"
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="mediass"
                     android:text="@string/media"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -263,7 +263,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="eventss"
                 android:id="@+id/Eventss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
@@ -272,11 +271,11 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="eventss"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="eventss"
                     android:id="@+id/imageButton7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -286,16 +285,17 @@
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
                     android:focusable="true"
+                    android:onClick="eventss"
                     android:src="@drawable/eventssv" />
 
                 <TextView
-                    android:onClick="eventss"
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="eventss"
                     android:text="@string/events"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -314,7 +314,6 @@
             tools:layout_editor_absoluteY="48dp">
 
             <LinearLayout
-                android:onClick="stjoseph"
                 android:id="@+id/Stjoseph"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
@@ -323,11 +322,11 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="stjoseph"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="stjoseph"
                     android:id="@+id/imageButton8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -337,16 +336,17 @@
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
                     android:focusable="true"
+                    android:onClick="stjoseph"
                     android:src="@drawable/aboutstjv" />
 
                 <TextView
-                    android:onClick="stjoseph"
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="stjoseph"
                     android:text="@string/AboutStj"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -354,7 +354,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="mapss"
                 android:id="@+id/Mapss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
@@ -362,11 +361,11 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="mapss"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="mapss"
                     android:id="@+id/imageButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -375,17 +374,18 @@
                     android:layout_weight="1"
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
-                    android:src="@drawable/mapandlocationv"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:onClick="mapss"
+                    android:src="@drawable/mapandlocationv" />
 
                 <TextView
-                    android:onClick="mapss"
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="mapss"
                     android:text="@string/map"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />
@@ -393,7 +393,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="sportss"
                 android:id="@+id/Sportss"
                 android:layout_width="114dp"
                 android:layout_height="110dp"
@@ -402,11 +401,11 @@
                 android:background="@color/MainmenuBlue"
                 android:clickable="true"
                 android:focusable="true"
+                android:onClick="sportss"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <ImageButton
-                    android:onClick="sportss"
                     android:id="@+id/imageButton9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -416,17 +415,17 @@
                     android:background="@color/MainmenuBlue"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/sportsv"
-                    />
+                    android:onClick="sportss"
+                    android:src="@drawable/sportsv" />
 
                 <TextView
-                    android:onClick="sportss"
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:fontFamily="Roboto"
+                    android:onClick="sportss"
                     android:text="@string/sports"
                     android:textColor="@color/Fontcolor"
                     android:textSize="16sp" />

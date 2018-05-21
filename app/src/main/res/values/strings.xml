@@ -2,13 +2,13 @@
     <!--> Register and Log in Strings  </!-->
     <string name="app_name">StjcPortal</string>
     <string name="registertitle">REGISTER</string>
-    <string name="registerButton">REGISTER</string>
+    <string name="registerButton">Register</string>
     <string name="register">Register</string>
     <string name="log_in">Log in</string>
     <string name="terms_and_conditions">Terms and Conditions</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="log_inButton">LOG IN</string>
+    <string name="log_inButton">Login</string>
     <string name="titlelog_in">LOG IN</string>
     <string name="Email">Email</string>
     <string name="user_name">User name</string>
@@ -35,6 +35,18 @@
     <string name="announcements">Announcements</string>
     <string name="title_activity_courses">Courses</string>
 
+    <!--> Student Account setting strings  </!-->
+    <string name="title_Account_Settings">STUDENTS DETAILS</string>
+    <string name="title_Account_Settings2">Details filled above should be same as college details</string>
+    <string name="title_Account_Settings3">Full name</string>
+    <string name="title_Account_Settings4">Admission Number</string>
+    <string name="title_Account_Settings5">Department</string>
+    <string name="title_Account_Settings6">Gender</string>
+    <string name="title_Account_Settings7">Date of birth</string>
+    <string name="title_Account_Settings8">Mobile number</string>
+    <string name="title_Account_SettingsButton">Submite</string>
+
+
     <!-->Courses Menu </!-->
     <string name="todo">TODO</string>
     <string name="Title">Courses Provided </string>
@@ -42,5 +54,9 @@
     <string name="tab_text_2">Diploma</string>
     <string name="tab_text_3">Short courses</string>
     <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_acount_text">My Account</string>
+    <string name="action_Logout_text">Log out</string>
+    <string name="action_search_txt">search</string>
 
 </resources>
